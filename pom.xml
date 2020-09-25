@@ -721,7 +721,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore></ignore>
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -734,7 +734,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -747,7 +747,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
                   <pluginExecution>
@@ -1128,8 +1128,8 @@
             <phase>post-site</phase>
             <configuration>
               <target name="rename file">
-                <move file="${project.basedir}/target/site/book.pdf" tofile="${project.basedir}/target/site/apache_hbase_reference_guide.pdf" />
-                <move file="${project.basedir}/target/site/book.pdfmarks" tofile="${project.basedir}/target/site/apache_hbase_reference_guide.pdfmarks" />
+                <move file="${project.basedir}/target/site/book.pdf" tofile="${project.basedir}/target/site/apache_hbase_reference_guide.pdf"/>
+                <move file="${project.basedir}/target/site/book.pdfmarks" tofile="${project.basedir}/target/site/apache_hbase_reference_guide.pdfmarks"/>
               </target>
             </configuration>
             <goals>
@@ -1211,7 +1211,7 @@
     <maven.min.version>3.0.4</maven.min.version>
     <java.min.version>${compileSource}</java.min.version>
     <!-- Dependencies -->
-    <hadoop-two.version>2.7.1</hadoop-two.version>
+    <hadoop-two.version>2.7.5</hadoop-two.version>
     <hadoop-three.version>3.0.0-SNAPSHOT</hadoop-three.version>
     <commons-cli.version>1.2</commons-cli.version>
     <commons-codec.version>1.9</commons-codec.version>
@@ -1289,7 +1289,7 @@
     <surefire.testFailureIgnore>false</surefire.testFailureIgnore>
     <test.output.tofile>true</test.output.tofile>
     <surefire.timeout>900</surefire.timeout>
-    <test.exclude.pattern></test.exclude.pattern>
+    <test.exclude.pattern/>
     <!-- default Xmx value is 2800m. Use -Dsurefire.Xmx=xxg to run tests with different JVM Xmx value -->
     <surefire.Xmx>2800m</surefire.Xmx>
     <surefire.cygwinXmx>2800m</surefire.cygwinXmx>
@@ -2432,7 +2432,7 @@
         <surefire.skipSecondPart>true</surefire.skipSecondPart>
         <surefire.firstPartGroups>org.apache.hadoop.hbase.testclassification.MiscTests
         </surefire.firstPartGroups>
-        <surefire.secondPartGroups></surefire.secondPartGroups>
+        <surefire.secondPartGroups/>
       </properties>
     </profile>
     <profile>
@@ -2448,7 +2448,7 @@
         <surefire.firstPartGroups>
           org.apache.hadoop.hbase.testclassification.CoprocessorTests
         </surefire.firstPartGroups>
-        <surefire.secondPartGroups></surefire.secondPartGroups>
+        <surefire.secondPartGroups/>
       </properties>
     </profile>
     <profile>
@@ -2463,7 +2463,7 @@
         <surefire.skipSecondPart>true</surefire.skipSecondPart>
         <surefire.firstPartGroups>org.apache.hadoop.hbase.testclassification.ClientTests
         </surefire.firstPartGroups>
-        <surefire.secondPartGroups></surefire.secondPartGroups>
+        <surefire.secondPartGroups/>
       </properties>
     </profile>
     <profile>
@@ -2478,7 +2478,7 @@
         <surefire.skipSecondPart>true</surefire.skipSecondPart>
         <surefire.firstPartGroups>org.apache.hadoop.hbase.testclassification.MasterTests
         </surefire.firstPartGroups>
-        <surefire.secondPartGroups></surefire.secondPartGroups>
+        <surefire.secondPartGroups/>
       </properties>
     </profile>
     <profile>
@@ -2493,7 +2493,7 @@
         <surefire.skipSecondPart>true</surefire.skipSecondPart>
         <surefire.firstPartGroups>org.apache.hadoop.hbase.testclassification.MapredTests
         </surefire.firstPartGroups>
-        <surefire.secondPartGroups></surefire.secondPartGroups>
+        <surefire.secondPartGroups/>
       </properties>
     </profile>
     <profile>
@@ -2508,7 +2508,7 @@
         <surefire.skipSecondPart>true</surefire.skipSecondPart>
         <surefire.firstPartGroups>org.apache.hadoop.hbase.testclassification.MapReduceTests
         </surefire.firstPartGroups>
-        <surefire.secondPartGroups></surefire.secondPartGroups>
+        <surefire.secondPartGroups/>
       </properties>
     </profile>
     <profile>
@@ -2524,7 +2524,7 @@
         <surefire.firstPartGroups>
           org.apache.hadoop.hbase.testclassification.RegionServerTests
         </surefire.firstPartGroups>
-        <surefire.secondPartGroups></surefire.secondPartGroups>
+        <surefire.secondPartGroups/>
       </properties>
     </profile>
     <profile>
@@ -2540,7 +2540,7 @@
         <surefire.firstPartGroups>
           org.apache.hadoop.hbase.testclassification.VerySlowMapReduceTests
         </surefire.firstPartGroups>
-        <surefire.secondPartGroups></surefire.secondPartGroups>
+        <surefire.secondPartGroups/>
       </properties>
     </profile>
 
@@ -2557,7 +2557,7 @@
         <surefire.firstPartGroups>
           org.apache.hadoop.hbase.testclassification.VerySlowRegionServerTests
         </surefire.firstPartGroups>
-        <surefire.secondPartGroups></surefire.secondPartGroups>
+        <surefire.secondPartGroups/>
       </properties>
     </profile>
 
@@ -2573,7 +2573,7 @@
         <surefire.skipSecondPart>true</surefire.skipSecondPart>
         <surefire.firstPartGroups>org.apache.hadoop.hbase.testclassification.FilterTests
         </surefire.firstPartGroups>
-        <surefire.secondPartGroups></surefire.secondPartGroups>
+        <surefire.secondPartGroups/>
       </properties>
     </profile>
     <profile>
@@ -2588,7 +2588,7 @@
         <surefire.skipSecondPart>true</surefire.skipSecondPart>
         <surefire.firstPartGroups>org.apache.hadoop.hbase.testclassification.IOTests
         </surefire.firstPartGroups>
-        <surefire.secondPartGroups></surefire.secondPartGroups>
+        <surefire.secondPartGroups/>
       </properties>
     </profile>
     <profile>
@@ -2603,7 +2603,7 @@
         <surefire.skipSecondPart>true</surefire.skipSecondPart>
         <surefire.firstPartGroups>org.apache.hadoop.hbase.testclassification.RestTests
         </surefire.firstPartGroups>
-        <surefire.secondPartGroups></surefire.secondPartGroups>
+        <surefire.secondPartGroups/>
       </properties>
     </profile>
     <profile>
@@ -2618,7 +2618,7 @@
         <surefire.skipSecondPart>true</surefire.skipSecondPart>
         <surefire.firstPartGroups>org.apache.hadoop.hbase.testclassification.RPCTests
         </surefire.firstPartGroups>
-        <surefire.secondPartGroups></surefire.secondPartGroups>
+        <surefire.secondPartGroups/>
       </properties>
     </profile>
     <profile>
@@ -2634,7 +2634,7 @@
         <surefire.firstPartGroups>
           org.apache.hadoop.hbase.testclassification.ReplicationTests
         </surefire.firstPartGroups>
-        <surefire.secondPartGroups></surefire.secondPartGroups>
+        <surefire.secondPartGroups/>
       </properties>
     </profile>
     <profile>
@@ -2649,7 +2649,7 @@
         <surefire.skipSecondPart>true</surefire.skipSecondPart>
         <surefire.firstPartGroups>org.apache.hadoop.hbase.testclassification.SecurityTests
         </surefire.firstPartGroups>
-        <surefire.secondPartGroups></surefire.secondPartGroups>
+        <surefire.secondPartGroups/>
       </properties>
     </profile>
     <profile>
@@ -2664,7 +2664,7 @@
         <surefire.skipSecondPart>true</surefire.skipSecondPart>
         <surefire.firstPartGroups>org.apache.hadoop.hbase.testclassification.FlakeyTests
         </surefire.firstPartGroups>
-        <surefire.secondPartGroups></surefire.secondPartGroups>
+        <surefire.secondPartGroups/>
       </properties>
     </profile>
 
